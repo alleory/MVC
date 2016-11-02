@@ -1,5 +1,7 @@
 <?php
 
+namespace vendor\core;
+
 class Router{
 
     protected static $routes = [];
