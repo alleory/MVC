@@ -2,10 +2,29 @@
 
 namespace app\controllers;
 
-class Main{
+//Русские коментарии
+
+class Main extends App{
+
+    //public $layout = 'main';
 
     public function indexAction(){
-        echo 'Main::index';
+        //$this->layout = false;
+        //$this->layout = 'main';
+        //$this->view = 'test';
+
+        $name = 'Abdullah';
+        $hi = 'Hello';
+        $colors = [
+            'white' => 'белый',
+            'black' => 'чёрный',
+        ];
+
+        $title = 'PAGE TITLE';
+        $this->set(compact('name', 'hi', 'colors', 'title') );
+
     }
+
+
 
 }
